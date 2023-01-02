@@ -7,7 +7,7 @@
     <title>Ex001 JavaScript Guanabara</title>
     <style>
         body{
-            background-color: rgb(255,0,0); /* Parte CSS */
+            background-color: rgb(255,0,0);
             color: black;
             font: normal 20pt comic;
         }
@@ -17,12 +17,11 @@
     </style>
 </head>
 <body>
-    <h1>Hello, World!</h1> <!-- Parte HTML -->
+    <h1>Hello, World!</h1>
     <p>Freedom from curse</p>
     <script>
-        window.alert("My first message") // Parte JS
-        window.confirm("Are you liking JS?")
-        window.prompt("What's your name?")
+        var name = window.prompt("What's your name?")
+        window.alert("Nice to meet you, " + name + "!")
     </script>
     
 </body>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers sum</title>
+    <style>
+        body{
+            font: normal 20pt sans;
+        }
+        input {
+            font: normal 20pt sans;
+            width: 100px;
+        }
+        div#res{
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Summaring numbers</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Enter" onclick="sum()">
+    <div id="res">Resultado: </div>
+    <script>
+        function sum(){
+            var tn1 = window.document.querySelector('input#txtn1')
+            var tn2 = window.document.querySelector('input#txtn2')
+            var res = window.document.querySelector('div#res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `The sum of ${n1} and ${n2} is equal to: <strong>${s}</strong>`
+        }
+    </script>
+</body>
+</html>

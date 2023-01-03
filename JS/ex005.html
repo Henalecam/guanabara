@@ -17,9 +17,15 @@
     <h1>Starting my studys in Dom</h1>
     <p>Here will have the result</p>
     <p>Learning how to use <strong>DOM</strong> in JavaScript</p>
-    <div>Click me</div>
+    <div id="msg">Click me</div>
     <script>
-        
+        var corpse = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write("it's written like this: " + p1.innerHTML)
+        p1.style.color = 'pink'
+        corpse.style.background = 'gray'
+        var d = window.document.querySelector("div#msg") // ID = # Class = .
+        d.style.background = "cyan"
     </script>
 </body>
 </html>

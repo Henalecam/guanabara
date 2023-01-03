@@ -20,10 +20,10 @@
     <h1>Hello, World!</h1>
     <p>Freedom from curse</p>
     <script>
-        var number1 = Number.parseInt(.prompt("Input a number: "))
-        var number2 = Number.parseInt(.prompt('Input another number: '))
+        var number1 = Number(window.prompt("Input a number: "))
+        var number2 = Number(window.prompt('Input another number: '))
         var sum = number1 + number2
-        window.alert("The sum of the numbers is: " + sum)
+        window.alert(`The sum of the numbers is: ${sum.toString()}`)
     </script>
     
 </body>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Car check system</h1>
+    Car speed: <input type="number" name="txtspd" id="txtspd"> Km/h
+    <input type="button" value="Verify" onclick = "calculate()">
+    <div id="sum">
+
+    </div>
+    <script>
+        function calculate(){
+            var txts = window.document.querySelector("input#txtspd")
+            var sum = window.document.querySelector("div#sum")
+            var spd = Number(txts.value)
+            sum.innerHTML = `<p>Your actual speed is equal to: <strong>${spd}</strong><\p>`
+            if (spd > 60) {
+                sum.innerHTML += `<p>You are driving <strong>ABOVE</strong> limit speed</p>`
+            }
+            sum.innerHTML += `<p>Always drive with safety belt!</p>`
+        }
+    </script>
+</body>
+</html>

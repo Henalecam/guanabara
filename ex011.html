@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country check</title>
+</head>
+<body>
+    <h1>Check if you're a foreign in Brazil</h1>
+    Select your country: <input type="text" name="txtct" id="txtct">
+    <input type="button" value="Verify" onclick = "verify()">
+    <div id="sum">
+
+    </div>
+    <script>
+        function verify(){
+            var country = window.document.querySelector("input#txtct")
+            var sum = window.document.querySelector("div#sum")
+            var count = country.value
+            sum.innerHTML = `<p>The country you're living is: <strong>${count}</strong><\p>`
+            if (count == "Brasil" || count == "brasil") {
+                sum.innerHTML += `<p>You are actually <strong>Brazilian</strong></p>`
+            } else {
+                sum.innerHTML += `<p>You're actually a <strong>Foreign</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>

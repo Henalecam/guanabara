@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Verify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="load()">
+    <header>
+        <h1>
+            Age Verify
+        </h1>
+    </header>
+    <section>
+        <div>
+            <p> Birth Year:
+                <input type="number" name="nbage" id="nbage">
+            </p>
+            <p> Sex: 
+                <input type="radio" name="radsex" id="masc" min="0">
+                <label for="masc">Masculine</label>
+                <input type="radio" name="radsex" id="fem" min="0">
+                <label for="fem">Feminine</label>
+            </p>
+            <p>
+                <input type="button" value="Verify" onclick="calculate()">
+            </p>
+        </div>
+        <div id="sum">
+            Write and mark correctly to see results
+        </div>
+    </section>
+    <footer>
+        <p>&copy;HenriqueTRK</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

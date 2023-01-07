@@ -17,6 +17,9 @@ section{
     text-align: center;
 
 }
+div{
+    padding: 20px;
+}
 footer{
     color: aliceblue;
     text-align: center;

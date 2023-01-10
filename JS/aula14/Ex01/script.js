@@ -22,8 +22,8 @@ function count() {
         }
 
         if (start < finish) {
-
-            for(let c = start; c <= finish; c =+ steps){
+            // Fiquei 2 horas debuggando, reescrevendo tudo para saber que o erro estava no "c =+ steps"
+            for(let c = start; c <= finish; c += steps){
                 
                 sum.innerHTML += `${c} \u{1F449}`
                 

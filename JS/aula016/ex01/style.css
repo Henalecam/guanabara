@@ -16,6 +16,9 @@ section {
     box-shadow: 5px 5px 20px crimson;
 
 }
+select{
+    width: 150px;
+}
 footer {
     color: black;
     text-align: center;
